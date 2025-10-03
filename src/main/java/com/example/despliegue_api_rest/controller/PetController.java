@@ -25,7 +25,6 @@ public class PetController {
      * Constructor del controlador.
      * Constructor of the controller.
      * @param petRepository repositorio para consultar en BD
-     * @param petRepository repository to query in DB
      */
     public PetController (PetRepository petRepository) {
         this.petRepository = petRepository;
@@ -34,8 +33,7 @@ public class PetController {
     /**
      * Este metodo devuelve la lista de mascotas.
      * This method returns the list of pets.
-     * @return List<Pet> información de cada mascota
-     * @return List<Pet> information of each pet
+     * @return List of Pet información de cada mascota
      */
     @GetMapping("/list")
     public List<Pet> hello() {
